@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title data-translate></title>
+    <title data-translate="pageTitle"></title>
     <link rel="stylesheet" href="styles/index.css" />
     <script src="js/data-translate.js"></script>
+    <link type="icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,8 +30,10 @@
               stroke-linejoin="round"
             ></path>
           </svg>
-          <h1>Генератор паролей</h1>
-          <p class="subtitle" data-translate="quikAndFast"></p>
+          <div class="info-container">
+            <h1 data-translate="passGenerate"></h1>
+            <p class="subtitle" data-translate="quickAndFast"></p>
+          </div>
         </header>
 
         <section class="card">
@@ -54,7 +57,9 @@
 
           <div class="controls">
             <label class="row">
-              <span>Длина: <strong id="lenLabel">16</strong></span>
+              <span data-translate="length"
+                >Длина: <strong id="lenLabel">16</strong></span
+              >
               <input id="length" type="range" min="6" max="64" value="16" />
             </label>
 
@@ -68,15 +73,25 @@
             </div>
 
             <div class="actions">
-              <button id="generateBtn" class="btn primary">
+              <button
+                id="generateBtn"
+                class="btn primary"
+                data-translate="generate"
+              >
                 Сгенерировать
               </button>
-              <button id="shuffleBtn" class="btn ghost">Перемешать</button>
+              <button
+                id="shuffleBtn"
+                class="btn ghost"
+                data-translate="shuffle"
+              >
+                Перемешать
+              </button>
             </div>
 
             <div class="meter-row">
               <div class="strength-info">
-                <span>Надёжность:</span>
+                <span data-translate="strength">Надёжность:</span>
                 <strong id="strengthText">—</strong>
               </div>
               <div id="strength" class="strength">
@@ -87,15 +102,21 @@
         </section>
 
         <details class="advanced">
-          <summary>Дополнительно</summary>
+          <summary data-translate="advanced">Дополнительно</summary>
           <div class="advanced-grid">
             <label class="row small">
-              <input id="avoidSimilar" type="checkbox" /> Избегать похожих
-              символов (i, l, 1, L, 0, O)
+              <input
+                id="avoidSimilar"
+                type="checkbox"
+              />
+              <span data-translate="avoid_Similar"></span>
             </label>
             <label class="row small">
-              <input id="includeEmoji" type="checkbox" /> Включить эмодзи (⚠️
-              может усложнить ввод на некоторых сайтах)
+              <input
+                id="includeEmoji"
+                type="checkbox"
+              />
+              <span data-translate="include_Emoji"></span>
             </label>
           </div>
         </details>
@@ -110,4 +131,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-

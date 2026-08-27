@@ -1,5 +1,6 @@
 {
   "pageTitle": "Password Generator",
+  "passGenerate": "Password generator",
   "quickAndFast": "Quick and easy",
   "copyBtn": "Copy",
   "length": "Length",
@@ -7,6 +8,6 @@
   "shuffle": "Shuffle",
   "strength": "Strength",
   "advanced": "Advanced",
-  "avoidSimilar": "Avoid similar characters (i, l, 1, L, 0, O)",
-  "includeEmoji": "Include emoji (⚠️ may make entering passwords on some websites more difficult)"
+  "avoid_Similar": "Avoid similar characters (i, l, 1, L, 0, O)",
+  "include_Emoji": "Include emoji (⚠️ may make entering passwords on some websites more difficult)"
 }

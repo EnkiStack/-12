@@ -99,8 +99,7 @@ body {
 
 .subtitle {
   color: var(--muted);
-  font-size: 13px;
-  margin-left: 8px;
+  font-size: 16px;
   white-space: nowrap;
   opacity: 0.95;
 }
@@ -164,7 +163,6 @@ body {
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
   font-size: 18px;
   flex-wrap: nowrap;
@@ -175,9 +173,6 @@ body {
   gap: 8px;
 }
 
-.row.small {
-  font-size: 16px;
-}
 
 /* Слайдер длины */
 input[type="range"] {
@@ -237,7 +232,7 @@ input[type="range"] {
   flex-wrap: wrap;
 }
 .strength-info {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
 }
 .strength {
@@ -265,6 +260,13 @@ input[type="range"] {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
 }
 
 /* --- Адаптив (телефон / узкие экраны) --- */
